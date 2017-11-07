@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<br><br>
+	<body>
+    {% if messages %}
+        {% for m in messages %}
+          <p style="color:peru;">{{m}}</p>
+        {% endfor %}
+    {% endif %}
+
+
+
+	  <div  class="center" align="center">
+	  <span>
+		<h2  width="40%" >Edit My Profile</h2>
+	  </span>
+
+		{% for error in errors %}
+			<p style="color:red">
+				{{error}}
+			</p>
+		{% endfor %}
+
+		<form enctype="multipart/form-data" method="post" action="{% url 'edit_profile' %}" style="border: none">{% csrf_token %}
+			<tr><th><label for="id_firstname">First name:
+            </label></th><td><input type="text" name="firstname" id="id_firstname" maxlength="20" size="20"/></td></tr>
+            <tr><th><label for="id_lastname">Last name:
+            </label></th><td><input type="text" name="lastname" id="id_lastname" maxlength="20" size="20" /></td></tr>
+            <tr><th><label for="id_age">Age:</label></th><td><input type="text" name="age" id="id_age" maxlength="5"  size="5"/></td></tr>
+            <tr><th><label for="id_bio">Bio:</label></th><td><input class="new-post" type="text" name="bio" id="id_bio" maxlength="420" /></td></tr>
+            <tr><th><label for="id_picture">Picture:</label></th><br><td><input type="file" name="picture" id="id_picture" /></td></tr>
+            <br>
+            <input type="submit" class="button" value="Update my profile" />
+
+		</form>
+          <hr>
+          {% for error in passworderrors %}
+			<p style="color:red">
+				{{error}}
+			</p>
+		{% endfor %}
+        <span>
+		<h2  width="40%" >Edit My Account</h2>
+	  </span>
+
+        <form method="post" action="{% url 'edit_password' %}" style="border: none">{% csrf_token %}
+            <!--
+			<tr><th><label>New Password</label></th><td><input type="text" name="new_password" maxlength="20" size="20"/></td></tr>
+            <tr><th><label>Confirm New Password</label></th><td><input type="text" name="new_password_r" maxlength="20" size="20" /></td></tr>
+
+-->
+            {{passwordform}}
+            <input type="submit" class="button" value="Update my password" />
+		</form>
+
+	  </span>
+          <hr>
+        <a href="{% url 'profile_self' %}">Save My Changes</a>
+
+      </div>
+
+
+	</body>
+
+{% endblock %}

@@ -1,0 +1,164 @@
+
+html {
+    min-height: 100%;  /* streach the background color to whole page */
+}
+
+body {
+
+    background: #F5F5DC ;
+    background: linear-gradient(to bottom, #F5F5DC, #CD853F);
+    background-repeat: repeat-y;
+    margin: 0;
+    height: 100%;
+    font-family: arial;
+
+}
+
+header {
+    background: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: #DAA520;
+}
+
+h1 .user{
+    color: white;
+    margin-top: 100px;
+}
+
+h2{
+    color: #A0522D
+}
+
+a:hover {
+    color: peru;
+}
+
+.img_center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.head_center{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+div .center {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.comment-form{
+    border: none;
+    width: 80%;
+}
+
+
+comment-header{
+    color: wheat;
+    float:left;
+
+}
+
+form {
+    border: 2px solid #F5F5DC;
+    border-radius: 10px;
+    width: 61.8%;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #A0522D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.img_topleft{
+    height: 10%;
+    background-position: top left;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #FFD700;
+    border-radius: 5px;
+}
+
+.signupbtn {
+    border-radius: 5px;
+}
+
+.container {
+    border-radius: 25px;
+    padding: 10px;
+    opacity: 0.9;
+    background-image: url("../images/bg_img.jpg"); 
+    background-position: fixed;
+}
+.container_log {
+    
+    padding: 10px;
+    opacity: 1.0;
+    background-position: fixed;
+}
+
+.label_text{
+    color: #A0522D;
+    text-align: left;
+}
+
+.commentform {
+    display: block;
+    position: relative;
+    padding-left: 65px;
+    border-top: 1px solid #ddd;
+    }
+
+.comment-box{
+    display: block;
+    padding-top: 2px;
+    border: none;
+
+}
+
+

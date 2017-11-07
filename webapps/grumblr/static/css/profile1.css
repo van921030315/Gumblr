@@ -1,0 +1,275 @@
+nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 320px;
+	background-color: peru;
+	border-right: 10px solid lavender;
+	transform: translate3d(-180px 0, 0);
+	transition: transform 0.4s ease;
+}
+
+.active-nav nav {
+	transform: translate3d(0,0,0);
+}
+
+nav ul {
+	list-style: none;
+	margin-top: 40px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	color: wheat;
+	padding: 10px 0;
+	margin-left: 20px;
+}
+
+nav ul li img{
+	height: 200px;
+	width: 200px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+nav ul li p{
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.content {
+	padding-top: 60px;
+	padding-left: 450px;
+	height: 100%;
+	min-height: 2000px;
+	background-color: wheat;
+	background: linear-gradient(to bottom , lightgoldenrodyellow,  lavender);
+	background-image: url("../images/background.jpg");
+    background-repeat: repeat-y;
+	transition: transform 0.4s ease;
+	text-align: center;
+}
+
+.active-nav .content {
+	transform: translate3d(200px; 0, 0);
+}
+
+.text p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#content-box {
+    position: relative;
+}
+#content-box img {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    overflow: hidden;
+}
+#image-box{
+	width: 700px;
+	height: 100px;
+
+}
+
+#compose-box{
+	position: relative;
+	background-color: white;
+}
+
+.post p {
+  position: relative;
+  top: 30%;
+  opacity: 0.8;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+}
+
+
+.compose p {
+  position: relative;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 1em;
+  margin-right: 1em;
+  overflow: hidden;
+}
+
+
+
+h4{
+	top: 1.5em;
+	left: 5em;
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+h5{
+	top: 1.5em;
+	right: 1em;
+	position: absolute;
+	font-size: 12px;
+	font-weight: lighter;
+	color: white;
+}
+
+h6{
+    color:peru;
+
+
+}
+
+th {
+
+    font-family: cursive;
+    font-size: small;
+    text-align: left;
+}
+
+replies{
+
+    font-family: cursive;
+    font-size: small;
+
+}
+
+
+section {
+    opacity: 0.9;
+	display: block;
+	max-width: 800px;
+	margin: 0 auto 1em;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+
+
+}
+
+.post {
+
+	background: peru;
+	/*background: linear-gradient(to top left, brown, #483D8B);*/
+	height: 180px;
+
+
+    p {
+    	padding: 2px;
+    	margin: 0;
+  	}
+  	.post img {
+  		padding: 2em;
+  		border: 1px solid white;
+  	}
+}
+
+.outer-box {
+    border: 1px solid peru;
+    height: fit-content;
+    background: wheat;
+
+
+}
+
+.comments {
+    background:antiquewhite;
+    height: fit-content !important;
+    color:peru;
+
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: saddlebrown;
+    overflow: hidden;
+    padding-left: 450px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: wheat;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.new-post{
+
+    /* border: 2px solid #F5F5DC; */
+    /* border-radius: 10px; */
+    width: 80%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.new-msg{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 2px 2px;
+    display: block;
+    border: none;
+}
+
+.whiteborder{
+	border:3px outset white;
+}
+
+.form_text{
+    color: wheat;
+    text-align: left;
+}
+
+hr{
+  border : 0;
+  height: 2px;
+  color: wheat;
+  background-image: linear-gradient(to right, rgba(245, 222, 179, 0), rgba(245, 222, 179, 0.75), rgba(245, 222, 179, 0));
+}
+
+.button {
+    background-color: wheat;
+    border: outset;
+    color: peru;
+    padding: 10px 24px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}

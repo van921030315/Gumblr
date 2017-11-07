@@ -1,0 +1,29 @@
+<!--index page for hw1(gumblr)-->
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+		<h1  style="font-family:verdana;font-size:332%;" class="head_center"><b>grumblr</b></h1>
+
+		<br>
+        <img calss ="img_center" src="{% static 'images/flaming_june/flaming_june__by_frederic_lord_leighton__1830_1896__1.png' %}" >
+		<br>
+		<h2 class="head_center">Please Login or  <a href="{% url 'registration' %}">Sign Up</a></h2>
+		<form action="/login/" method="POST" >{% csrf_token %}
+
+ 			<div class="container_log">
+    			<label class="label_text"><b>Username</b></label>
+    			<input type="text" placeholder="Enter Username" name="username" required>
+
+	    		<label class="label_text"><b>Password</b></label>
+    			<input type="password" placeholder="Enter Password" name="password" required>
+
+   				<button type="submit" class="signupbtn"><b style="font-size:161%">Login</b></button>
+    			<input type="checkbox" checked="checked"> <label  class="label_text">Remember me</label>
+  			</div>
+		</form>
+		<p>Forget your password?</p>
+		<a href="{% url 'resetpassword' %}"> Reset password by email </a>
+
+{% endblock %}

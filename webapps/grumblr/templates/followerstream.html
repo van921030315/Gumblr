@@ -1,0 +1,36 @@
+{% extends 'base_stream.html' %}
+{% load staticfiles %}
+
+
+{% block topbar %}
+        <a href="{% url 'profile_self' %}">Profile</a>
+  		<!--
+  		<a href="{% url 'home' %}">Home</a>
+  		<a href="#news">News</a>
+  		<a href="#contact">Contact</a>
+  		-->
+        <a href="{% url 'home' %}">Home</a>
+        <a href="#">Account</a>
+        <a href="#">Settings</a>
+  		<a href="{% url 'logout' %}">Log out</a>
+		<span style="display:inline; float:right; color: wheat"><time>{% now "M-D-Y" %} </time></span>
+{% endblock %}
+
+{% block navbar %}
+
+		<ul style="margin-top:120px;">
+
+			{% if profile.picture %}
+				<li > <img style="display:block;" src="{% url 'photo' user.username%}"  alt={{user.username}} >
+				<h3 style="padding-right: 20px; padding-bottom: 30px;font-family:verdana; color:lavender"> {{user.username}}</h3>
+				</li>
+			{% else %}
+				<li > <img style="display:block;" src="{% static 'images/user/user.png'%}"  alt={{user.username}} >
+				<h3 style="padding-right: 20px; padding-bottom: 30px;font-family:verdana; color:lavender"> {{user.username}}</h3>
+				</li>
+			{% endif %}
+
+
+		</ul>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+ $(document).on('submit', '#add_commennt_form', function(e){
+            e.preventDefault();
+
+            $.ajax({
+                type:"POST",
+                url: '/add_comment/{{ e.id }}/',
+                data: {
+
+                 }
+
+            }
+            );
+        });
